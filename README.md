@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Projekt: En Enkel "To-Do"-Lista
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Översikt
+Du ska bygga en enkel React-applikation med TypeScript där användare kan:
+- Lägga till uppgifter i en lista.
+- Markera uppgifter som utförda.
+- Ta bort uppgifter från listan.
 
-Currently, two official plugins are available:
+All logik kommer att hanteras inom en enda komponent, vilket gör det enklare att förstå.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Uppgifter
 
-## Expanding the ESLint configuration
+### 1. Grundläggande Struktur
+- Starta ett nytt React-projekt med TypeScript.
+- Skapa en enkel `App.tsx`-fil där hela applikationen byggs.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 2. Formulär för att Lägga till Uppgifter
+- Skapa ett formulär i `App.tsx` där användaren kan mata in en uppgift (task).
+- Använd `useState` för att hantera input-värdet (uppgiften).
 
-- Configure the top-level `parserOptions` property like this:
+### 3. Visa Uppgiftslistan
+- När användaren lägger till en uppgift, lägg till den i en lista som visas på sidan.
+- Varje uppgift ska kunna markeras som utförd och kunna tas bort från listan.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 4. Markera som Utförd
+- Lägg till en knapp bredvid varje uppgift för att markera den som utförd.
+- När en uppgift markeras som utförd, kan texten ändras till exempelvis genomstruken stil.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 5. Ta Bort Uppgifter
+- Lägg till en knapp bredvid varje uppgift för att ta bort den från listan.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+#### Möjlig tidsuppdelning
+* Första timmen: Strukturera projektet, skapa input-fältet och implementera funktionaliteten för att lägga till uppgifter.
+* Andra timmen: Lägg till visning av uppgifter och möjligheten att markera som utförd.
+* Tredje timmen: Lägg till ta bort-funktionaliteten och finslipa gränssnittet med enklare stil.
+#### Bonus (om tiden tillåter)
+* Lägg till en räknare som visar hur många uppgifter som är kvar att göra.
+* Lägg till en knapp för att rensa alla utförda uppgifter.
+#### Lärdomar
+* Grunderna i React (komponenter, state, eventhantering).
+* Användning av TypeScript för att definiera typer och säkerställa typkontroll.
+* Hantering av listor och enkel UI-interaktion.
