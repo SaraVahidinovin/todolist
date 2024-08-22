@@ -1,0 +1,119 @@
+
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50vw;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.add-task {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="text"] {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 75%;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+button:focus {
+  outline: none;
+}
+
+.add-btn {
+  background-color: #30c954;
+}
+
+.add-btn:hover {
+  background-color: #23943c;
+}
+
+.list-container {
+  margin-top: 3rem;
+}
+
+.task-management {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-management p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.clear-btn {
+  background-color: #30c954;
+  margin-left: 0;
+}
+
+.clear-btn:hover {
+  background-color: #23943c;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  padding: 0.5rem;
+  flex-grow: 1;
+  background-color: #f4faff;
+  border-radius: 10px;
+}
+
+span.done {
+  text-decoration: line-through;
+  color: #888;
+  background-color: #e9ecef;
+}
+
+.done-btn {
+  background-color: #007bff;
+}
+
+.done-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #e73345;
+}
+
+.delete-btn:hover {
+  background-color: #c91c2d;
+}
